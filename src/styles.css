@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-orange: hsl(21 100% 50%);
+  --primary-black: #0d1117;
+  --primary-bg: #2c2f3e;
+  --headerHeight: 10%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Consolas", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, serif;
+  outline: none;
+}
+
+main {
+  padding-inline: 16px;
+  color: white;
+}
+
+#main__background {
+  width: 100%;
+  min-height: calc(100vh - var(--headerHeight));
+  background: var(--primary-bg) linear-gradient(180deg, var(--primary-black) 10%, var(--primary-bg) 50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.card__container {
+  border-radius: 16px;
+}
