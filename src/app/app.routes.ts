@@ -32,5 +32,13 @@ export const routes: Routes = [
       const m = await import('./user/user');
       return m.User;
     }
+  },
+  {
+    path: 'readme',
+    pathMatch: 'full',
+    loadComponent: async () => {
+      const m = await import('./readme/readme');
+      return m.Readme;
+    }
   }
 ];
