@@ -4,6 +4,10 @@
   --primary-black: #0d1117;
   --primary-bg: #2c2f3e;
   --headerHeight: 10%;
+  --card-background-color_1: hsl(234 12% 35%);
+  --card-background-color_2: hsl(237 8% 46%);
+  --card-background-color: hsl(237 8% 46% / 0.22);
+  --card-background-gradient: var(--card-background-color_1) linear-gradient(115deg, var(--card-background-color_2) 10%, var(--card-background-color_1) 50%);
 }
 
 html, body {

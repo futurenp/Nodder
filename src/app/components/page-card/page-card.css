@@ -1,0 +1,29 @@
+.page__card {
+  position: fixed;
+  inset: calc(var(--headerHeight)) 16px 16px 16px;
+
+  box-sizing: border-box;
+  padding-inline: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--card-background-color);
+  border-radius: 16px;
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.2s ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
