@@ -1,0 +1,40 @@
+input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  display: flex;
+  border: 2px solid #ccc;
+  border-radius: 16px;
+  margin-left: 10%;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 16px; /* Prevents auto-zoom on mobile */
+  transition: border-color 0.3s ease;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  color: white;
+}
+
+input[type="checkbox"] {
+  margin-inline: 32px;
+  block-size: 20px;
+}
+
+input[type="checkbox"]:checked {
+  accent-color: var(--primary-orange);
+}
+
+input:focus {
+  border-color: var(--primary-orange);
+  outline: none;
+  border-width: 2px;
+}
+
+.token-row {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  > h2 {
+    white-space: nowrap;
+  }
+  grid-template-columns: 10% 20% 60%;
+  align-items: center;
+}

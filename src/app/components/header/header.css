@@ -1,7 +1,7 @@
 header {
   display: flex;
-  padding-inline: 8px;
-  padding-block: 8px;
+  padding-inline: 16px;
+  padding-block: 0;
   align-items: center;
   justify-content: space-between;
   color: white;
@@ -9,7 +9,7 @@ header {
   height: var(--headerHeight);
 
   nav {
-    border: 2px solid transparent;
+    border: 4px solid transparent;
     border-radius: 16px;
     background:
       linear-gradient(var(--primary-black), var(--primary-black)) padding-box,
@@ -21,6 +21,7 @@ header {
     padding: 16px;
 
     > span {
+      padding-inline: 16px;
       font-size: 30px;
       font-weight: bold;
       user-select: none;

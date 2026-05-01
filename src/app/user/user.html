@@ -1,3 +1,6 @@
 <app-page-card>
-  <h2>Hello, User.</h2>
+  @for (platform of platforms; track platform) {
+    <app-token-input [platform]="platform">
+    </app-token-input>
+  }
 </app-page-card>

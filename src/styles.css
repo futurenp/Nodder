@@ -3,7 +3,7 @@
   --primary-orange: hsl(21 100% 50%);
   --primary-black: #0d1117;
   --primary-bg: #2c2f3e;
-  --headerHeight: 10%;
+  --headerHeight: 128px;
   --card-background-color_1: hsl(234 12% 35%);
   --card-background-color_2: hsl(237 8% 46%);
   --card-background-color: hsl(237 8% 46% / 0.22);
@@ -17,7 +17,7 @@ html, body {
 }
 
 * {
-  font-family: "Consolas", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, serif;
+  font-family: "Consolas", -apple-system, BlinkMacSystemFont, "Segoe UI", monospace;
   outline: none;
 }
 
