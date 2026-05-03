@@ -1,6 +1,7 @@
 <app-page-card>
-  @for (platform of platforms; track platform) {
-    <app-token-input [platform]="platform">
+  @for (platform of platforms; track platform.id) {
+    <app-token-input [platformInput]="platform.id">
     </app-token-input>
   }
+  <app-reset-user/>
 </app-page-card>

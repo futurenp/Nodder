@@ -1,5 +1,22 @@
-<span class="token-row">
-  <input type="checkbox">
-  <h2>{{ platform() }} API Token</h2>
-  <input type="password" placeholder="Paste API token here...">
-</span>
+<div id="padding-div">
+  <span class="token-row">
+  <p id="title">{{ platform()?.name }}</p>
+  <input
+    type="checkbox"
+    #showInput
+    (click)="onClickCheckbox($event)"
+    [checked]="platform()?.enabled"
+  />
+  <p>API Token</p>
+    @if (showInput.checked) {
+      <input
+        type="password"
+        placeholder="Paste API token here..."
+        animate.enter="fade-in"
+        (keyup)="onUpdateApiText($event)"
+        [value]="platform()?.apiKey"
+      />
+    }
+  </span>
+</div>
+

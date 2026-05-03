@@ -4,17 +4,17 @@ input[type="password"] {
   display: flex;
   border: 2px solid #ccc;
   border-radius: 16px;
-  margin-left: 10%;
   box-sizing: border-box;
   font-family: inherit;
-  font-size: 16px; /* Prevents auto-zoom on mobile */
+  font-size: 16px;
   transition: border-color 0.3s ease;
   background-color: hsla(0, 0%, 0%, 0.3);
   color: white;
+  min-width: 0;
 }
 
 input[type="checkbox"] {
-  margin-inline: 32px;
+  margin-inline: 8px;
   block-size: 20px;
 }
 
@@ -31,10 +31,33 @@ input:focus {
 .token-row {
   display: grid;
   gap: 16px;
-  width: 100%;
-  > h2 {
-    white-space: nowrap;
-  }
-  grid-template-columns: 10% 20% 60%;
+  grid-template-columns: 10% 5% 128px auto;
   align-items: center;
+  padding-inline: 24px;
+}
+
+p {
+  font-size: 24px;
+}
+
+#title {
+  margin-inline: 8px;
+}
+
+.fade-in {
+  animation: fade-in 0.2s ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#padding-div {
+  background-color: hsla(0, 0%, 0%, 0.3);
+  border-radius: 16px;
 }

@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --primary-orange: hsl(21 100% 50%);
+  --primary-orange-hover: hsl(20 100% 60%);
+  --primary-orange-click: hsl(21 100% 32%);
   --primary-black: #0d1117;
   --primary-bg: #2c2f3e;
   --headerHeight: 128px;
