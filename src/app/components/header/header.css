@@ -46,12 +46,10 @@ header {
           background-color: var(--hover-transparent);
         }
 
-        /* Active Link State (Nested!) */
         &.active-link {
           background-color: var(--primary-orange-transparent);
           color: var(--primary-orange-hover);
 
-          /* Active Link Hover (Overrides standard hover) */
           &:hover {
             background-color: var(--primary-orange-transparent);
             color: var(--primary-orange-hover);

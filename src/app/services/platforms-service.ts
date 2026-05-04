@@ -7,7 +7,7 @@ import { Platform } from '../model/Platform';
 export class PlatformsService {
   private readonly platformsList = signal<Platform[]>([
     { id: 'modrinth', name: 'Modrinth', apiKey: '', enabled: false },
-    { id: 'curseforge', name: 'CurseForge', apiKey: '', enabled: false },
+    { id: 'curseforge', name: 'CurseForge', apiKey: '', enabled: false }
   ]);
 
   constructor() {

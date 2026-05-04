@@ -12,7 +12,7 @@
 .switcher-btn {
   border-radius: 16px;
   padding: 16px;
-  font-size: 18px;
+  font-size: 16px;
   background-color: transparent;
   color: white;
   border: none;
@@ -24,9 +24,13 @@
   background-color: var(--hover-transparent);
 }
 
-.switcher-btn:active, .switcher-btn.active {
+.switcher-btn:active, .switcher-btn.active, .active-link {
   background-color: var(--primary-orange-transparent);
   color: var(--primary-orange-hover);
+}
+
+.switcher-btn.active:hover, .active-link:hover {
+  background-color: var(--primary-orange-transparent);
 }
 
 .switcher-btn:first-of-type {
@@ -35,4 +39,9 @@
 
 .switcher-btn:last-of-type {
   margin-bottom: 12px;
+}
+
+p {
+  margin-top: 0;
+  font-size: 18px;
 }
