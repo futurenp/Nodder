@@ -2,13 +2,13 @@ input[type="text"] {
   width: 100%;
   padding: 12px 15px;
   display: flex;
-  border: 2px solid #ccc;
+  border: 2px solid transparent;
   border-radius: 16px;
   box-sizing: border-box;
   font-family: inherit;
   font-size: 16px;
   transition: border-color 0.3s ease;
-  background-color: hsla(0, 0%, 0%, 0.3);
+  background-color: var(--inner-bg-color);
   color: white;
   min-width: 0;
   -webkit-text-security: disc;
@@ -72,6 +72,6 @@ p {
 }
 
 #padding-div {
-  background-color: hsla(0, 0%, 0%, 0.3);
+  background-color: var(--inner-bg-color);
   border-radius: 16px;
 }

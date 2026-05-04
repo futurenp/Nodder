@@ -1,10 +1,11 @@
+<p class="page__title">User</p>
 <app-page-card>
   <h2>API</h2>
   <hr/>
   <span id="user-info-labels">
-    <p>Platform</p>
-    <p>Enable</p>
-  </span>
+  <p>Platform</p>
+  <p>Enable</p>
+</span>
   @for (platform of platforms; track platform.id) {
     <app-token-input [platformInput]="platform.id">
     </app-token-input>

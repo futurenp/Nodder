@@ -1,0 +1,8 @@
+#publish-div {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 212px auto;
+  height: 100%;
+  /*margin-top: 8px;*/
+  /*margin-bottom: 8px;*/
+}

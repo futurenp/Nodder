@@ -1,6 +1,11 @@
 .page__card {
-  position: fixed;
-  inset: calc(var(--headerHeight)) 16px 16px 16px;
+  position: relative;
+
+  /* Replace inset with width and margins */
+  width: 90%;          /* Leaves 5% space on both sides */
+  margin-inline: auto; /* Centers the card horizontally */
+  margin-top: 24px;    /* Adds space below your page title */
+  margin-bottom: 16px;
 
   box-sizing: border-box;
   padding-top: 16px;
@@ -13,6 +18,7 @@
   justify-content: flex-start;
   background: var(--card-background-color);
   border-radius: 16px;
+
   @starting-style {
     opacity: 0;
   }
