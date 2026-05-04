@@ -1,8 +1,13 @@
 <div id="padding-div">
   <span class="token-row">
     <p id="title">{{ platform()?.name }}</p>
-    <input
-      type="checkbox"
+<!--    <input-->
+<!--      type="checkbox"-->
+<!--      #showInput-->
+<!--      (click)="onClickCheckbox($event)"-->
+<!--      [checked]="platform()?.enabled"-->
+<!--    />-->
+    <app-toggle-switch
       #showInput
       (click)="onClickCheckbox($event)"
       [checked]="platform()?.enabled"

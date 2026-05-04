@@ -1,10 +1,11 @@
 import { Component, computed, inject, input } from '@angular/core';
 import { PlatformsService } from '../../services/platforms-service';
 import { Platform } from '../../model/Platform';
+import { ToggleSwitch } from '../toggle-switch/toggle-switch';
 
 @Component({
   selector: 'app-token-input',
-  imports: [],
+  imports: [ToggleSwitch],
   templateUrl: './token-input.html',
   styleUrl: './token-input.css',
 })

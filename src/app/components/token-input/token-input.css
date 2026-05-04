@@ -32,7 +32,7 @@ input:focus {
 .token-row {
   display: grid;
   gap: 16px;
-  grid-template-columns: 10% 5% 128px auto;
+  grid-template-columns: 10% 6% 128px auto;
   align-items: center;
   padding-inline: 24px;
 }
@@ -74,4 +74,8 @@ p {
 #padding-div {
   background-color: var(--inner-bg-color);
   border-radius: 16px;
+}
+
+.faded {
+  color: gray;
 }
