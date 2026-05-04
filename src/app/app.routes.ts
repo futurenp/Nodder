@@ -35,10 +35,10 @@ export const routes: Routes = [
         pathMatch: 'full',
       },
       {
-        path: 'new',
+        path: 'create',
         loadComponent: async () => {
-          const m = await import('./publish/new/new');
-          return m.New;
+          const m = await import('./publish/create/create');
+          return m.Create;
         },
       },
       {
