@@ -1,0 +1,29 @@
+* {
+  border-radius: 16px;
+  border: none;
+}
+
+.horizontal-switch-container {
+  background-color: var(--inner-bg-color);
+  display: inline-flex;
+  flex-direction: row;
+  width: auto;
+  padding: 12px;
+  gap: 8px;
+}
+
+.horizontal-switch-btn {
+  background-color: transparent;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+
+  &:hover {
+    background-color: var(--hover-transparent);
+  }
+
+  &:active, &.active {
+    background-color: var(--primary-orange-transparent);
+    color: var(--primary-orange-hover);
+  }
+}

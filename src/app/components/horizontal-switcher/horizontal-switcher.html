@@ -1,0 +1,13 @@
+<div class="horizontal-switch-container">
+  @for (label of labels(); track label.id) {
+    <button
+      type="button"
+      class="horizontal-switch-btn"
+      (click)="selectLabel(label)"
+      [class.active]="selected()?.id === label.id"
+    >
+      {{label.name}}
+    </button>
+  }
+</div>
+
