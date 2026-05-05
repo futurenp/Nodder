@@ -1,13 +1,15 @@
 import { Injectable, signal } from '@angular/core';
 import { Platform } from '../model/Platform';
+import { StorageKeys } from '../model/StorageKeys';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PlatformsService {
+  readonly Keys = StorageKeys;
   private readonly platformsList = signal<Platform[]>([
-    { id: 'modrinth', name: 'Modrinth', apiKey: '', enabled: false },
-    { id: 'curseforge', name: 'CurseForge', apiKey: '', enabled: false }
+    { id: this.Keys.Platforms.MODRINTH, name: 'Modrinth', apiKey: '', enabled: false },
+    { id: this.Keys.Platforms.CURSEFORGE, name: 'CurseForge', apiKey: '', enabled: false },
   ]);
 
   constructor() {

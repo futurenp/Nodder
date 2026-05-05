@@ -1,0 +1,7 @@
+<input
+  type="text"
+  class="input-box"
+  [placeholder]="placeholder()"
+  [value]="value()? value() : ''"
+  (input)="onChange($event)"
+/>

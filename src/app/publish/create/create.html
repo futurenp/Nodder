@@ -1,4 +1,6 @@
+<p>Visibility</p>
 <app-horizontal-switcher
+  [saveLoc]="Keys.Create.VISIBILITY"
   [labels]="[
   { id: 'public', name: 'Public' },
   { id: 'unlisted', name: 'Unlisted' },
@@ -7,3 +9,10 @@
 >
 
 </app-horizontal-switcher>
+
+<p>Name</p>
+<app-input-box [saveLoc]="Keys.Create.NAME" [placeholder]="'Enter Project Name...'"></app-input-box>
+<p>Summary</p>
+<app-input-box [saveLoc]="Keys.Create.SUMMARY" [placeholder]="'Enter Project Summary...'"></app-input-box>
+<button id="create_btn" (click)="create()">Create</button>
+<button id="clear_btn" (click)="clear()">Clear</button>
