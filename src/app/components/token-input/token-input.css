@@ -45,32 +45,6 @@ p {
   margin-inline: 8px;
 }
 
-.fade-in {
-  animation: fade-in 0.15s ease-in;
-}
-
-.fade-out {
-  animation: fade-out 0.15s ease-in;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
 #padding-div {
   background-color: var(--inner-bg-color);
   border-radius: 16px;

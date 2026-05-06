@@ -58,3 +58,48 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.btn {
+  border-radius: 16px;
+  padding: 20px;
+  font-size: 16px;
+  background-color: var(--inner-bg-color);
+  color: white;
+  border: none;
+  font-weight: bold;
+
+  &:hover {
+    background-color: var(--hover-transparent);
+  }
+
+  &:active {
+    background-color: var(--primary-orange-transparent);
+    color: var(--primary-orange);
+  }
+}
+
+.fade-in {
+  animation: fade-in 0.15s ease-in;
+}
+
+.fade-out {
+  animation: fade-out 0.15s ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

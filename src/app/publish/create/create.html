@@ -1,3 +1,7 @@
+<p>Name</p>
+<app-input-box [saveLoc]="Keys.Create.NAME" [placeholder]="'Enter Project Name...'"></app-input-box>
+<p>Summary</p>
+<app-input-box [saveLoc]="Keys.Create.SUMMARY" [placeholder]="'Enter Project Summary...'"></app-input-box>
 <p>Visibility</p>
 <app-horizontal-switcher
   [saveLoc]="Keys.Create.VISIBILITY"
@@ -7,12 +11,8 @@
   { id: 'private', name: 'Private' }
   ]"
 >
-
 </app-horizontal-switcher>
-
-<p>Name</p>
-<app-input-box [saveLoc]="Keys.Create.NAME" [placeholder]="'Enter Project Name...'"></app-input-box>
-<p>Summary</p>
-<app-input-box [saveLoc]="Keys.Create.SUMMARY" [placeholder]="'Enter Project Summary...'"></app-input-box>
-<button id="create_btn" (click)="create()">Create</button>
-<button id="clear_btn" (click)="clear()">Clear</button>
+<div class="btn-div">
+  <button class="btn" (click)="create()">Create</button>
+  <button class="btn" (click)="clear()">Clear</button>
+</div>

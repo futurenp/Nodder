@@ -7,16 +7,20 @@ export class StorageService {
   public removeTrigger = signal<{ keys: string[]; tick: number }>({ keys: [], tick: 0 });
 
   save(key: string, obj: any) {
-    if (!obj) return;
+    if (obj === undefined || obj === null) return;
     let str = JSON.stringify(obj);
     localStorage.setItem(key, str);
+    this.removeTrigger.update((state) => ({
+      keys: state.keys.filter((newKey) => key != newKey),
+      tick: state.tick
+    }));
   }
 
   get(key: string): any {
     if (key in localStorage) {
       return JSON.parse(localStorage[key]);
     } else {
-      return '';
+      return null;
     }
   }
 
@@ -24,7 +28,7 @@ export class StorageService {
     keys.forEach((key) => localStorage.removeItem(key));
     this.removeTrigger.update((state) => ({
       keys: keys,
-      tick: state.tick + 1,
+      tick: state.tick,
     }));
   }
 }

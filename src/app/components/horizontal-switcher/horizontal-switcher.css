@@ -3,6 +3,8 @@
   border: none;
 }
 
+/* maybe some animation for this eventually */
+
 .horizontal-switch-container {
   background-color: var(--inner-bg-color);
   display: inline-flex;

@@ -42,6 +42,8 @@ export class Create {
       return;
     }
 
+    console.log(JSON.stringify(this.storage.get(this.Keys.Platforms.MODRINTH)));
+
     //push to platforms
   }
 
