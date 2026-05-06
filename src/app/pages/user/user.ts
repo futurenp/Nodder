@@ -1,8 +1,8 @@
 import {Component, inject, input, signal} from '@angular/core';
-import {PageCard} from '../components/page-card/page-card';
-import { TokenInput } from '../components/token-input/token-input';
-import { ResetUser } from '../components/reset-user/reset-user';
-import { PlatformsService } from '../services/platforms-service';
+import {PageCard} from '../../components/page-card/page-card';
+import { TokenInput } from '../../components/token-input/token-input';
+import { ResetUser } from '../../components/reset-user/reset-user';
+import { PlatformsService } from '../../services/platforms-service';
 
 @Component({
   selector: 'app-user',

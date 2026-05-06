@@ -1,9 +1,9 @@
-import { Component, contentChildren, inject } from '@angular/core';
-import {HorizontalSwitcher} from '../../components/horizontal-switcher/horizontal-switcher';
-import { InputBox } from '../../components/input-box/input-box';
-import { StorageKeys } from '../../model/StorageKeys';
-import { StorageService } from '../../services/storage-service';
-import { PlatformsService } from '../../services/platforms-service';
+import {Component, inject} from '@angular/core';
+import {HorizontalSwitcher} from '../../../components/horizontal-switcher/horizontal-switcher';
+import {InputBox} from '../../../components/input-box/input-box';
+import {StorageKeys} from '../../../model/StorageKeys';
+import {StorageService} from '../../../services/storage-service';
+import {PlatformsService} from '../../../services/platforms-service';
 
 @Component({
   selector: 'app-create',

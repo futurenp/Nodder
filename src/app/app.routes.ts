@@ -10,7 +10,7 @@ export const routes: Routes = [
     path: 'home',
     pathMatch: 'full',
     loadComponent: async () => {
-      const m = await import('./home/home');
+      const m = await import('./pages/home/home');
       return m.Home;
     },
   },
@@ -18,14 +18,14 @@ export const routes: Routes = [
     path: 'statistics',
     pathMatch: 'full',
     loadComponent: async () => {
-      const m = await import('./statistics/statistics');
+      const m = await import('./pages/statistics/statistics');
       return m.Statistics;
     },
   },
   {
     path: 'publish',
     loadComponent: async () => {
-      const m = await import('./publish/publish');
+      const m = await import('./pages/publish/publish');
       return m.Publish;
     },
     children: [
@@ -37,21 +37,21 @@ export const routes: Routes = [
       {
         path: 'create',
         loadComponent: async () => {
-          const m = await import('./publish/create/create');
+          const m = await import('./pages/publish/create/create');
           return m.Create;
         },
       },
       {
         path: 'update',
         loadComponent: async () => {
-          const m = await import('./publish/update/update');
+          const m = await import('./pages/publish/update/update');
           return m.Update;
         },
       },
       {
         path: 'info',
         loadComponent: async () => {
-          const m = await import('./publish/info/info');
+          const m = await import('./pages/publish/info/info');
           return m.Info;
         },
       },
@@ -61,7 +61,7 @@ export const routes: Routes = [
     path: 'user',
     pathMatch: 'full',
     loadComponent: async () => {
-      const m = await import('./user/user');
+      const m = await import('./pages/user/user');
       return m.User;
     },
   },
@@ -69,7 +69,7 @@ export const routes: Routes = [
     path: 'readme',
     pathMatch: 'full',
     loadComponent: async () => {
-      const m = await import('./readme/readme');
+      const m = await import('./pages/readme/readme');
       return m.Readme;
     },
   },
