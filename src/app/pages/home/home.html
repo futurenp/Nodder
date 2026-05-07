@@ -1,4 +1,44 @@
-<p class="page__title">Home</p>
+<p class="page__title">Home <span id="readme">[readme]</span></p>
+
 <app-page-card>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum condimentum bibendum purus, at efficitur lectus dictum et. Aliquam condimentum dui felis, in rhoncus ex ornare sit amet. Suspendisse quis mi ut mi pretium porta. Sed eget purus dignissim, ullamcorper velit nec, fermentum libero. Donec vehicula sem at dolor varius malesuada. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus nec diam a eros imperdiet pulvinar non nec mauris. Pellentesque blandit elit quis varius interdum. Nam ipsum massa, rutrum eu feugiat sit amet, maximus ut risus. Aliquam sit amet quam ac felis ultrices mollis sed eu purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse accumsan interdum vulputate. Sed at tortor dapibus, luctus lacus a, ullamcorper nisi. Pellentesque magna nisi, volutpat non sem sed, dignissim venenatis elit. Nulla vulputate pellentesque diam, a sollicitudin risus sodales placerat. Mauris a orci ac nulla eleifend varius et quis purus. </p>
+  <ngx-typed-js
+    class="modding-for"
+    [strings]="['Modrinth.', 'Curseforge.', 'You.']"
+    [shuffle]="true"
+    [typeSpeed]="40"
+    [startDelay]="100"
+    [showCursor]="false">
+    Modding for <span class="typing header"></span>
+  </ngx-typed-js>
+  <hr/>
+
+  <h3 class="subsection">What Nodder Does:</h3>
+  <ngx-typed-js
+    [showCursor]="false"
+    [typeSpeed]="0"
+    [strings]="['Nodder is a web based tool that allows mod developers to upload and maintain their ' +
+     'projects on multiple platforms without the inconvenience of uploading separately to each platform. ' +
+     'Nodder needs a user provided API key, and then using the Publish page, can upload and update projects. ' +
+     'Only creating projects and using Modrinth API is supported at the moment.']">
+    <p class="typing description"></p>
+  </ngx-typed-js>
+  <h3 class="subsection">Who This is For:</h3>
+  <ngx-typed-js
+    [showCursor]="false"
+    [typeSpeed]="0"
+    [startDelay]="1500"
+    [strings]="['Mod developers for Minecraft (and myself). Though, I would recommend to make this functionality' +
+     ' integrated into your own project. This is was made mainly for school (and fun).']">
+    <p class="typing description"></p>
+  </ngx-typed-js>
+  <h3 class="subsection">Frameworks, Libraries, & Tools Used:</h3>
+    <ngx-typed-js
+      [showCursor]="false"
+      [typeSpeed]="0"
+      [startDelay]="3000"
+      [strings]="['I made this project using Angular 21.2.8 with the intention of learning Angular and Typescript.' +
+       ' I also used the ngx-typed-js library for these cool text animations which are probably overused,'
+       + ' but I think they\'re cool. I also used JetBrains Webstorm as an IDE.']">
+      <p class="typing description"></p>
+    </ngx-typed-js>
 </app-page-card>
