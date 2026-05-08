@@ -71,8 +71,8 @@ main {
 .highlight {
   color: var(--primary-orange-hover);
   background: var(--primary-orange-transparent);
-  border-radius: 8px;
-  padding: 3px;
+  border-radius: 6px;
+  padding: 1px 3px;
 }
 
 .btn {

@@ -4,6 +4,10 @@ import {InputBox} from '../../../components/input-box/input-box';
 import {StorageKeys} from '../../../model/StorageKeys';
 import {StorageService} from '../../../services/storage-service';
 import {PlatformsService} from '../../../services/platforms-service';
+import { ApiService } from '../../../services/api-service';
+import { ModrinthData } from '../../../model/ModrinthData';
+import { ModrinthResponse } from '../../../model/ModrinthResponse';
+import { Label } from '../../../model/Label';
 
 @Component({
   selector: 'app-create',
@@ -15,6 +19,7 @@ export class Create {
   readonly Keys = StorageKeys;
   storage = inject(StorageService);
   platformService = inject(PlatformsService);
+  apiService = inject(ApiService);
   readonly createKeys: string[] =  [
     this.Keys.Create.NAME,
     this.Keys.Create.SUMMARY,
@@ -42,9 +47,31 @@ export class Create {
       return;
     }
 
-    console.log(JSON.stringify(this.storage.get(this.Keys.Platforms.MODRINTH)));
+    let data: ModrinthData = {
+      title: this.storage.get(this.Keys.Create.NAME),
+      description: this.storage.get(this.Keys.Create.SUMMARY),
+      requested_status: 'unlisted',
+      project_type: 'mod',
+      is_draft: true,
+      slug: 'tiejifjijfi',
+      body: "",
+      server_side: 'required',
+      client_side: 'required',
+      initial_versions: [],
+      categories: ['magic'],
+      license_id: 'MIT',
+    };
 
-    //push to platforms
+    this.apiService.createProject(data).subscribe({
+      next: (response) => {
+        console.log('Project created successfully!', response);
+        alert('Project created successfully!');
+      },
+      error: (err) => {
+        console.error('Failed to create project', err);
+        alert('Failed to create project. Check the console.');
+      },
+    });
   }
 
   clear() {
