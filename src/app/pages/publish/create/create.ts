@@ -6,8 +6,6 @@ import {StorageService} from '../../../services/storage-service';
 import {PlatformsService} from '../../../services/platforms-service';
 import { ApiService } from '../../../services/api-service';
 import { ModrinthData } from '../../../model/ModrinthData';
-import { ModrinthResponse } from '../../../model/ModrinthResponse';
-import { Label } from '../../../model/Label';
 
 @Component({
   selector: 'app-create',
@@ -47,6 +45,7 @@ export class Create {
       return;
     }
 
+    //sample data, would need to update the create page to include many more fields to have all the options available. But some do work.
     let data: ModrinthData = {
       title: this.storage.get(this.Keys.Create.NAME),
       description: this.storage.get(this.Keys.Create.SUMMARY),

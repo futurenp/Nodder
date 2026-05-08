@@ -4,6 +4,7 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class StorageService {
+  //used to clear items from elements
   public removeTrigger = signal<{ keys: string[]; tick: number }>({ keys: [], tick: 0 });
 
   save(key: string, obj: any) {

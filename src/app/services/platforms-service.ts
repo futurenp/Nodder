@@ -12,6 +12,8 @@ export class PlatformsService {
     { id: this.Keys.Platforms.CURSEFORGE, name: 'CurseForge', apiKey: '', enabled: false },
   ]);
 
+  //I made this before I made the storage service, so this really should be using that, but otherwise this is okay
+
   constructor() {
     this.loadFromStorage();
   }

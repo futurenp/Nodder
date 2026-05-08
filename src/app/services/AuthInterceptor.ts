@@ -20,6 +20,7 @@ export function authInterceptor(
 
   const platform: Platform = storageService.get(StorageKeys.Platforms.MODRINTH);
 
+  //append the auth key to the request
   if (platform && platform.apiKey) {
     const reqWithAuth = req.clone({
       headers: req.headers.append('Authorization', platform.apiKey),
