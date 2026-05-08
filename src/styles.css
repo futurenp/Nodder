@@ -59,6 +59,22 @@ main {
   flex-direction: column;
 }
 
+.subsection-label {
+  border-radius: 16px;
+  background-color: var(--inner-bg-color);
+  width: auto;
+  display: inline-block;
+  padding: 8px;
+  padding-inline: 12px;
+}
+
+.highlight {
+  color: var(--primary-orange-hover);
+  background: var(--primary-orange-transparent);
+  border-radius: 8px;
+  padding: 3px;
+}
+
 .btn {
   border-radius: 16px;
   padding: 20px;

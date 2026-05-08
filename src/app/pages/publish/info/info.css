@@ -1,7 +1,20 @@
 #hidden {
   color: transparent;
+  padding: 0;
+  margin: 4px 0;
 }
 
 .typing {
   color: white;
+  font-size: 18px;
 }
+
+p {
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.subsection-label {
+  margin-bottom: 0;
+}
+

@@ -1,7 +1,10 @@
 * {
-  width: 100%;
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+hr {
+  width: 100%;
 }
 
 .typing {
@@ -25,13 +28,4 @@
 
 #readme {
   color: var(--hover-transparent);
-}
-
-.subsection {
-  /*color: var(--primary-orange-hover);*/
-  border-radius: 16px;
-  background-color: var(--inner-bg-color);
-  width: auto;
-  padding: 8px;
-  padding-inline: 12px;
 }
